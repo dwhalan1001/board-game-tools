@@ -15,7 +15,6 @@ body{
 
 #game-tools{
     display: grid;
-    border: 1px solid red;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 5px;
     justify-content: center;
@@ -25,11 +24,38 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: deepskyblue;
+    background-color: hsl(200, 100%, 50%);
     border-radius: 10px;
-    border: 1px solid #000000;
+    border: 3px solid hsl(200, 100%, 40%);
     height: 100px;
     color: white;
     font-size: 2em;
     text-decoration: none;
+}
+
+.tool-btn:hover{
+    background-color: hsl(200, 100%, 60%);
+}
+
+.flip7-player{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.flip7-player-name{
+    font-family: "Monaco", monospace;
+    font-size: 1.5em;
+}
+
+.flip7-player-total{
+    font-family: "Monaco", monospace;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.flip7-player-hand{
+    font-family: "Monaco", monospace;
+    font-size: 1.5em;
+    text-align: center;
 }
