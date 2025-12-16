@@ -37,25 +37,34 @@ body{
     background-color: hsl(200, 100%, 60%);
 }
 
+.flip7-players-container{
+    display: grid;
+    /*border: 2px solid dodgerblue;*/
+    row-gap: 2px;
+}
+
 .flip7-player{
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 0.2fr;
+    flex-grow: 1;
+    min-width: 0;
     gap: 5px;
-    justify-content: center;
 }
 
 .flip7-player-name{
+    flex-grow: 1;
     font-family: "Monaco", monospace;
     font-size: 1.5em;
+    /*border: 2px solid orange;*/
 }
 
-.flip7-player-total{
+.flip7-player-total, .flip7-player-hand{
+    display: flex;
+    flex-shrink: 1;
+    /*flex: 0 1 1fr;*/
     font-family: "Monaco", monospace;
     font-size: 1.5em;
     text-align: center;
-}
-
-.flip7-player-hand{
-    font-family: "Monaco", monospace;
-    font-size: 1.5em;
-    text-align: center;
+    min-width: 0;
+    /*border: 2px solid orange;*/
 }
