@@ -20,30 +20,13 @@
             <h2 class="flip7-player-hand">Hand</h2>
             <div class="flip7-add-score-header"></div>
         </div>
-
-        <div id="flip7-player-1" class="flip7-player">
-            <input id="flip7-player-1-name" class="flip7-player-name">
-            <input id="flip7-player-1-total" type="number" value="0" size="3" class="flip7-player-total" readonly>
-            <input id="flip7-player-1-hand" type="number" class="flip7-player-hand">
-            <button onclick="flip7AddScore('player-1')" class="flip7-add-score">+</button>
-        </div>
-
-        <div id="flip7-player-2" class="flip7-player">
-            <input id="flip7-player-2-name" class="flip7-player-name">
-            <input id="flip7-player-2-total" type="number" value="0" size="3" class="flip7-player-total" readonly>
-            <input id="flip7-player-2-hand" type="number" class="flip7-player-hand">
-            <button onclick="flip7AddScore('player-2')" class="flip7-add-score">+</button>
-        </div>
-
-        <div id="flip7-player-3" class="flip7-player">
-            <input id="flip7-player-3-name" class="flip7-player-name">
-            <input id="flip7-player-3-total" type="number" value="0" size="3" class="flip7-player-total" readonly>
-            <input id="flip7-player-3-hand" type="number" class="flip7-player-hand">
-            <button onclick="flip7AddScore('player-3')" class="flip7-add-score">+</button>
-        </div>
     </div>
 
-    <button onclick="flip7AddPlayer()">Add Player</button>
+    <div id="flip7-player-controls" class="flip7-player-controls">
+        <button type="button" onclick="flip7AddPlayer()" class="flip7-add-player">Add Players</button>
+        <input id="flip7-player-count" type="number" value="1" size="2" class="flip7-add-player-count">
+    </div>
+
 
     <script src="flip7.js"></script>
 
