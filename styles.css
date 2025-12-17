@@ -2,7 +2,12 @@ body{
     display: block;
     justify-content: center;
     font-family: "Monaco", monospace;
-    background-color: whitesmoke;
+    background-color: hsl(220 20% 20%);
+    color: white;
+}
+
+h1{
+    color: white;
 }
 
 #title-line{
@@ -16,7 +21,7 @@ body{
 #game-tools{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 5px;
+    gap: 10px;
     justify-content: center;
 }
 
@@ -24,77 +29,36 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: hsl(200, 100%, 50%);
     border-radius: 10px;
-    border: 3px solid hsl(200, 100%, 40%);
     height: 100px;
     color: white;
     font-size: 2em;
     text-decoration: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.tool-btn:hover{
+/*.tool-btn:hover{*/
+/*    background-color: hsl(200, 100%, 60%);*/
+/*}*/
+
+.flip7-btn{
+    background-color: hsl(200, 100%, 50%);
+    border: 3px solid hsl(200, 100%, 40%)
+}
+
+.flip7-btn:hover{
     background-color: hsl(200, 100%, 60%);
 }
 
-.flip7-players-container{
-    display: grid;
-    /*border: 2px solid dodgerblue;*/
-    row-gap: 2px;
+.catan-btn{
+    background-color: hsl(147, 50%, 47%);
+    border: 3px solid hsl(147, 50%, 37%);
 }
 
-.flip7-player{
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr 0.2fr;
-    flex-grow: 1;
-    min-width: 0;
-    gap: 2px;
+.catan-btn:hover{
+    background-color: hsl(147, 50%, 60%);
 }
 
-.flip7-player-name{
-    flex-grow: 1;
-    font-family: "Monaco", monospace;
-    font-size: 1em;
-    min-width: 200px;
-    /*border: 2px solid orange;*/
-}
-
-.flip7-player-total, .flip7-player-hand{
-    display: flex;
-    flex-shrink: 1;
-    /*flex: 0 1 1fr;*/
-    font-family: "Monaco", monospace;
-    font-size: 1em;
-    text-align: center;
-    min-width: 0;
-    /*border: 2px solid orange;*/
-}
-
-.flip7-player-controls{
-    margin-top: 10px;
-    height: 25px;
-    display: grid;
-    grid-template-columns: 7fr 1fr;
-    justify-content: center;
-    gap: 2px;
-}
-
-.flip7-add-player{
-    font-family: "Monaco", monospace;
-    font-size: 1em;
-    text-align: center;
-}
-
-.flip7-add-player-count{
-    min-width: 0;
-    padding: 0;
-    font-family: "Monaco", monospace;
-    font-size: 1em;
-    text-align: center;
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.disable-dbl-tap-zoom{
+    touch-action: manipulation;
 }

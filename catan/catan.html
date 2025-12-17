@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Catan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="catan.css">
+</head>
+<body>
+    <div id="title-line">
+        <h1>Catan</h1>
+    </div>
+
+    <div class="resources">
+        <div class="resource-container">
+            <button class="adjust-resource disable-dbl-tap-zoom">-</button>
+            <div class="resource-card">
+                <img src="Resource_Brick.webp" alt="Brick">
+                <input id="brick-count" type="number" value="0" class="resource-count" readonly disabled>
+            </div>
+            <button class="adjust-resource disable-dbl-tap-zoom">+</button>
+        </div>
+        <div class="resource-container">
+            <button class="adjust-resource disable-dbl-tap-zoom">-</button>
+            <div class="resource-card">
+                <img src="Resource_Ore.webp" alt="Ore">
+                <input id="ore-count" type="number" value="0" class="resource-count" readonly disabled>
+            </div>
+            <button class="adjust-resource disable-dbl-tap-zoom">+</button>
+        </div>
+        <div class="resource-container">
+            <button class="adjust-resource disable-dbl-tap-zoom">-</button>
+            <div class="resource-card">
+                <img src="Resource_Sheep.webp" alt="Sheep">
+                <input id="sheep-count" type="number" value="0" class="resource-count" readonly disabled>
+            </div>
+            <button class="adjust-resource disable-dbl-tap-zoom">+</button>
+        </div>
+        <div class="resource-container">
+            <button class="adjust-resource disable-dbl-tap-zoom">-</button>
+            <div class="resource-card">
+                <img src="Resource_Wheat.webp" alt="Wheat">
+                <input id="wheat-count" type="number" value="0" class="resource-count" readonly disabled>
+            </div>
+            <button class="adjust-resource disable-dbl-tap-zoom">+</button>
+        </div>
+        <div class="resource-container">
+            <button class="adjust-resource disable-dbl-tap-zoom">-</button>
+            <div class="resource-card">
+                <img src="Resource_Wood.webp" alt="Wood">
+                <input id="wood-count" type="number" value="0" class="resource-count" readonly disabled>
+            </div>
+            <button class="adjust-resource disable-dbl-tap-zoom">+</button>
+        </div>
+    </div>
+
+    <script src="catan.js"></script>
+
+</body>
+</html>
