@@ -48,18 +48,19 @@
 
 .resource-count{
     position: absolute;
+    z-index: 5;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3em;
     font-family: "Monaco", monospace;
     font-weight: bold;
-    min-width: 0;
     text-align: center;
     background-color: hsla(0, 0%, 0%, 0);
     border: hsla(0, 0%, 0%, 0);
     color: white;
     -webkit-text-stroke: 2px black;
+    pointer-events: none;
 }
 
 input[type=number]::-webkit-inner-spin-button,

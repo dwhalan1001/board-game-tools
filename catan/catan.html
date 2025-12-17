@@ -13,46 +13,52 @@
     </div>
 
     <div class="resources">
+
         <div class="resource-container">
-            <button class="adjust-resource disable-dbl-tap-zoom">-</button>
+            <button onclick="adjustResource('brick', -1)" class="adjust-resource disable-dbl-tap-zoom">-</button>
             <div class="resource-card">
-                <img src="Resource_Brick.webp" alt="Brick">
+                <img src="catan_brick.webp" alt="Brick">
                 <input id="brick-count" type="number" value="0" class="resource-count" readonly disabled>
             </div>
-            <button class="adjust-resource disable-dbl-tap-zoom">+</button>
+            <button onclick="adjustResource('brick', 1)" class="adjust-resource disable-dbl-tap-zoom">+</button>
         </div>
+
         <div class="resource-container">
-            <button class="adjust-resource disable-dbl-tap-zoom">-</button>
+            <button onclick="adjustResource('ore', -1)" class="adjust-resource disable-dbl-tap-zoom">-</button>
             <div class="resource-card">
-                <img src="Resource_Ore.webp" alt="Ore">
+                <img src="catan_ore.webp" alt="Ore">
                 <input id="ore-count" type="number" value="0" class="resource-count" readonly disabled>
             </div>
-            <button class="adjust-resource disable-dbl-tap-zoom">+</button>
+            <button onclick="adjustResource('ore', 1)" class="adjust-resource disable-dbl-tap-zoom">+</button>
         </div>
+
         <div class="resource-container">
-            <button class="adjust-resource disable-dbl-tap-zoom">-</button>
+            <button onclick="adjustResource('sheep', -1)" class="adjust-resource disable-dbl-tap-zoom">-</button>
             <div class="resource-card">
-                <img src="Resource_Sheep.webp" alt="Sheep">
+                <img src="catan_sheep.webp" alt="Sheep">
                 <input id="sheep-count" type="number" value="0" class="resource-count" readonly disabled>
             </div>
-            <button class="adjust-resource disable-dbl-tap-zoom">+</button>
+            <button onclick="adjustResource('sheep', 1)" class="adjust-resource disable-dbl-tap-zoom">+</button>
         </div>
+
         <div class="resource-container">
-            <button class="adjust-resource disable-dbl-tap-zoom">-</button>
+            <button onclick="adjustResource('wheat', -1)" class="adjust-resource disable-dbl-tap-zoom">-</button>
             <div class="resource-card">
-                <img src="Resource_Wheat.webp" alt="Wheat">
+                <img src="catan_wheat.webp" alt="Wheat">
                 <input id="wheat-count" type="number" value="0" class="resource-count" readonly disabled>
             </div>
-            <button class="adjust-resource disable-dbl-tap-zoom">+</button>
+            <button onclick="adjustResource('wheat', 1)" class="adjust-resource disable-dbl-tap-zoom">+</button>
         </div>
+
         <div class="resource-container">
-            <button class="adjust-resource disable-dbl-tap-zoom">-</button>
+            <button onclick="adjustResource('wood', -1)" class="adjust-resource disable-dbl-tap-zoom">-</button>
             <div class="resource-card">
-                <img src="Resource_Wood.webp" alt="Wood">
+                <img src="catan_wood.webp" alt="Wood">
                 <input id="wood-count" type="number" value="0" class="resource-count" readonly disabled>
             </div>
-            <button class="adjust-resource disable-dbl-tap-zoom">+</button>
+            <button onclick="adjustResource('wood', 1)" class="adjust-resource disable-dbl-tap-zoom">+</button>
         </div>
+
     </div>
 
     <script src="catan.js"></script>
